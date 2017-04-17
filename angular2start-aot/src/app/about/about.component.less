@@ -1,0 +1,37 @@
+@import "../../public/styles/util.less";
+
+.container--about {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: @size-16;
+  &__side {
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: @size-72 * 2;
+    margin: @size-16;
+    md-card {
+      flex-grow: 1;
+    }
+  }
+  &__viewer {
+    flex-grow: 1;
+    margin: @size-16;
+  }
+
+}
+
+.side--menu {
+  &__list {
+
+  }
+  &__item {
+    padding: @size-16;
+    &:hover {
+      background-color: @color-silver;
+      cursor: pointer;
+    }
+
+  }
+
+}

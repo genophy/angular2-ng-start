@@ -1,0 +1,28 @@
+@import "../../public/styles/util.less";
+
+.menu {
+  &--list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &--item {
+    text-align: center;
+    min-width: @size-14 * 8;
+    max-width: @size-14 * 12;
+    padding: @size-10;
+    margin: 0 @size-10;
+    cursor: pointer;
+    border: 0px;
+    background: @color-white;
+    outline: none;
+
+    &:active {
+      background-color: @color-silver;
+    }
+    &:hover {
+      background-color: @color-gray;
+    }
+
+  }
+
+}

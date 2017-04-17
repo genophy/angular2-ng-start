@@ -1,0 +1,71 @@
+@import "variable.less";
+
+// image size (contain normal and max) , from 10px to 180px
+.imgsizeiter(@count) when (@count < 18) {
+  .img-size-@{count}0 {
+    width: @count*10px;
+    height: @count*10px;
+  }
+  .img-size-@{count}0-wrap {
+    max-width: @count*10px;
+    max-height: @count*10px;
+  }
+  .imgsizeiter((@count + 1));
+}
+
+.imgsizeiter(1);
+
+// padding and margin space value, from 10px to 60px
+.pmspace(@count) when (@count < 6) {
+  .p-all-@{count}0 {
+    padding: @count * 10px;
+  }
+  .m-all-@{count}0 {
+    margin: @count * 10px;
+  }
+  .p-left-@{count}0 {
+    padding-left: @count * 10px;
+  }
+  .m-left-@{count}0 {
+    margin-left: @count * 10px;
+  }
+  .p-right-@{count}0 {
+    padding-right: @count * 10px;
+  }
+  .m-right-@{count}0 {
+    margin-right: @count * 10px;
+  }
+  .p-top-@{count}0 {
+    padding-top: @count * 10px;
+  }
+  .m-top-@{count}0 {
+    margin-top: @count * 10px;
+  }
+  .p-bottom-@{count}0 {
+    padding-bottom: @count * 10px;
+  }
+  .m-bottom-@{count}0 {
+    margin-bottom: @count * 10px;
+  }
+  .p-h-@{count}0 {
+    padding-left: @count * 10px;
+    padding-right: @count * 10px;
+  }
+  .m-h-@{count}0 {
+    margin-left: @count * 10px;
+    margin-right: @count * 10px;
+  }
+  .p-v-@{count}0 {
+    padding-top: @count * 10px;
+    padding-bottom: @count * 10px;
+  }
+
+  .m-v-@{count}0 {
+    margin-top: @count * 10px;
+    margin-bottom: @count * 10px;
+  }
+
+  .pmspace((@count + 1));
+}
+
+.pmspace(1);

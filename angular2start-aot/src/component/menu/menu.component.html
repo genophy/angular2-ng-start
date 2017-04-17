@@ -1,0 +1,33 @@
+<div class="menu--list">
+
+  <div class="menu--item" md-button (click)="router.navigate(['home'])">
+    HOME
+  </div>
+
+  <div class="menu--item" md-button (click)="router.navigate(['photo'])">
+    PHOTO
+  </div>
+
+  <div class="menu--item" md-button (click)="router.navigate(['discuss'])">
+    DISCUSS
+  </div>
+
+  <div class="menu--item" md-button [md-menu-trigger-for]="contact">
+    CONTACT
+  </div>
+
+  <div class="menu--item" md-button (click)="router.navigate(['about/us'])">
+    ABOUT
+  </div>
+
+</div>
+
+<div>
+
+  <md-menu #contact="mdMenu">
+    <div md-menu-item>EMAIL</div>
+    <div md-menu-item>PHONE</div>
+    <div md-menu-item>TWITTER</div>
+  </md-menu>
+
+</div>

@@ -1,0 +1,25 @@
+@import "../public/styles/util.less";
+
+.wrapper {
+  background-color: #efefef;
+  padding: 20px;
+
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  &__title {
+    font-size: @size-18;
+    font-weight: 800;
+    flex-shrink: 0;
+
+  }
+  &__menu {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+}

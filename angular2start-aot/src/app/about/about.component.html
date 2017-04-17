@@ -1,0 +1,19 @@
+<!-- about root page -->
+<div class="container--about">
+
+  <div class="container--about__side">
+    <md-card>
+      <div class="side--menu__list">
+        <div class="side--menu__item" (click)="router.navigate(['about/us'])">us</div>
+        <div class="side--menu__item" (click)="router.navigate(['about/me'])">me</div>
+      </div>
+    </md-card>
+  </div>
+  <div class="container--about__viewer">
+
+    <router-outlet></router-outlet>
+
+  </div>
+
+</div>
+
